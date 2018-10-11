@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Space Mono';
   text-align: center;
+  background-color: #F3EDEB;
 }
 
 body {
@@ -9,18 +10,24 @@ body {
 }
 
 h1 {
-  font-family: 'Space Mono';
   font-size: 75px;
+  font-weight: 700;
   color: Black;
   display: inline-block;
   width: 100%;
   transition:all 0.5s;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 50px;
+  padding: 0;
 }
 
 h2 {
+  font-weight: 400;
   display: inline-block;
   width: 100%;
-  margin: 0;
+  margin-bottom: 100px;
+  margin-top: 50px;
   
 }
 
@@ -34,8 +41,9 @@ img {
   max-width: 100%
 }
 
-li:hover {
+.sandwich:hover {
   opacity: 0.5;
+  transition:all 0.5s;
 }
 
 /* Flex Container */
@@ -44,13 +52,17 @@ li:hover {
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-.flex-nav ul li {
-  flex-grow: 3;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
 }
 
 @media all and (max-width:500px) {
+  html {
+    text-align: center;
+  }
+  
   .flex-nav ul {
     flex-direction: column;
   }
