@@ -37,9 +37,11 @@ h2 {
   padding:50px;
 }
 
+/*
 img {
   max-width: 100%
 }
+*/
 
 .sandwich:hover {
   opacity: 0.5;
